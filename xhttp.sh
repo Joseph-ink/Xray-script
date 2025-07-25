@@ -291,7 +291,7 @@ function download_github_files() {
 function check_xray_script_dependencies() {
   local -a dependencies=(
     "ssl.sh|https://api.github.com/repos/zxcvos/Xray-script/contents/ssl.sh"
-    "nginx.sh|https://api.github.com/repos/zxcvos/Xray-script/contents/nginx.sh"
+    "nginx.sh|https://api.github.com/repos/Joseph-ink/Xray-script/contents/nginx.sh"
     "docker.sh|https://api.github.com/repos/zxcvos/Xray-script/contents/docker.sh"
   )
 
@@ -1773,7 +1773,7 @@ function main_processes() {
 
   if ! [[ -d /usr/local/xray-script ]]; then
     mkdir -p /usr/local/xray-script
-    wget --no-check-certificate -O /usr/local/xray-script/nginx.sh https://raw.githubusercontent.com/zxcvos/Xray-script/main/nginx.sh
+    wget --no-check-certificate -O /usr/local/xray-script/nginx.sh https://raw.githubusercontent.com/Joseph-ink/Xray-script/main/nginx.sh
     wget --no-check-certificate -O /usr/local/xray-script/ssl.sh https://raw.githubusercontent.com/zxcvos/Xray-script/main/ssl.sh
     wget --no-check-certificate -q -O /usr/local/xray-script/docker.sh https://raw.githubusercontent.com/zxcvos/Xray-script/main/docker.sh
     wget --no-check-certificate -q -O /usr/local/xray-script/config.json https://raw.githubusercontent.com/zxcvos/Xray-script/refs/heads/main/XTLS/config.json
